@@ -1,3 +1,3 @@
 function click() {
-    location.href = "https://google.com/";
+    console.log('fjut');
 }
