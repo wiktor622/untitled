@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.content {
+    display: flex;
+}
+
+.navbar {
+    font-size: 16px;
+    height: 60px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    background: none;
+    border: none
+}
+
+.sidebar {
+    margin-top: 60px;
+    background: rgb(48, 48, 48);
+    width: 80px;
+    height: 100vh;
+    color: #999;
+    list-style-type: none;
+    list-style: none;
+    padding-left: 0;
+    transition: width 0.1s;
+    position: fixed;
+}
+
+.sidebar-field {
+    padding: 15px 0 15px 0;
+    display: flex;
+}
+
+.sidebar-field:hover {
+    background: rgb(77, 75, 75);
+    cursor: pointer;
+    color: whitesmoke
+}
+
+.field-icon {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+}
+
+.sidebar i {
+    font-size: 24px;
+}
+
+.sidebar-text {
+    font-family: 'Roboto', sans-serif;
+    display: none;
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #999;
+}
+
+.field-active {
+    color: whitesmoke;
+}
+
+.login {
+    padding: 50px 25px 50px 25px;
+    text-align: center;
+    color:whitesmoke;
+    background:rgb(48, 48, 48);
+    box-shadow: 0px 10px 48px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 10px 48px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 48px 0px rgba(0,0,0,0.75);
+}
+
+.login .login-heading {
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+th, td {
+    padding: 5px 10px 5px 10px;
+}
+
+.login label {
+    font-size: 28px;
+}
+
+.login input[type="text"],input[type=password],input[type=submit] {
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: whitesmoke;
+}
+
+.login input[type=submit] {
+    margin-top: 25px;
+    border: 1px solid white;
+    padding: 5px 10px 5px 10px;
+}
+
+.login input[type=submit]:hover {
+    background: rgb(95, 95, 95);
+    color: white;
+    transition: background-color 0.3s
+}
+
+.site {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: calc(100% - 80px);
+    margin-left: 80px;
+    padding: 50px 0 50px 0;
+}
+
+.note-field,.homework-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: whitesmoke;
+    height: 200px;
+    width: 250px;
+    background: #000;
+    transition: transform 0.1s;
+}
+
+.note-field:hover {
+    transform: translateY(-5px);
+}
